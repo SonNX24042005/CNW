@@ -113,7 +113,6 @@ form textarea {
 }
 
 form button {
-  margin-top: 15px;
   background: #007bff;
   color: white;
   border: none;
@@ -137,7 +136,7 @@ form button:hover {
 /* Nút "Thêm sản phẩm" */
 #toggleFormBtn {
   display: block;
-  margin: -10px auto 20px auto;
+  margin: -10px auto 20px auto; /* Căn giữa và điều chỉnh khoảng cách */
   background: #28a745;
   color: white;
   border: none;
@@ -176,6 +175,31 @@ form button:hover {
   /* Thêm box-sizing để padding không làm vỡ layout */
   box-sizing: border-box;
 }
+
+/* Style cho các nút trong form */
+.form-buttons {
+  margin-top: 15px;
+}
+
+/* Style cho nút Hủy */
+#cancelBtn {
+  background: #6c757d;
+  margin-left: 10px;
+}
+
+#cancelBtn:hover {
+  background: #5a6268;
+}
+
+/* Style cho thông báo lỗi */
+#formError {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: none; /* Ẩn ban đầu */
+}
+
 
 
 /* FOOTER */

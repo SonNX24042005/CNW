@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng Tạp hóa</title>
+
+  <link rel="stylesheet" href=".\styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Cửa hàng Tạp hóa</h1>
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#">Sản phẩm</a>
+      <a href="#">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Giới thiệu</h2>
+      <p>Chào mừng đến với <strong>Cửa hàng tạp hóa</strong> — nơi bán mọi thứ trên đời!</p>
+    </section>
+
+    <section>
+      <h2>Sản phẩm nổi bật</h2>
+
+      <div class="search-container">
+        <label for="searchInput">Tìm kiếm sản phẩm:</label>
+        <input type="text" id="searchInput" placeholder="Nhập tên sản phẩm...">
+      </div>
+
+      <div class="product-list">
+        <article>
+          <img
+            src="https://cdn.24h.com.vn/upload/4-2025/images/2025-10-15/Cang-thang-My---Trung-giang-don-manh-vao-Bitcoin-Thi-truong-tien-so-se-ra-sao-1c0bb490-a84e-11f0-976f-5be4355ebebc-1760536986-672-width3498height1970.jfif"
+            alt="anh Bitcoin">
+          <h3>Bitcoin</h3>
+          <p>Giúp bạn có thể giàu trong tương lai</p>
+          <p><strong>Giá:</strong> 2.925.830.311,00đ</p>
+        </article>
+
+        <article>
+          <img src="https://cdn0166.cdn4s.com/media/moon/1-lap-trinh-python.jpg" alt="Sách python">
+          <h3>Học Python Trong 30 Ngày</h3>
+          <p>Khóa học qua sách giúp bạn bắt đầu lập trình Python nhanh chóng.</p>
+          <p><strong>Giá:</strong> 150.000đ</p>
+        </article>
+
+        <article>
+          <img src="https://mia.vn/media/uploads/blog-du-lich/cong-vien-thong-nhat-01-1696504216.jpeg"
+            alt="Anh Công viên">
+          <h3>Công viên thống nhất</h3>
+          <p>Không chắc sẽ giúp được gì cho bạn</p>
+          <p><strong>Giá:</strong> 180.000.000.000.000.000.000.000.000đ</p>
+        </article>
+      </div>
+    </section>
+
+    <button id="toggleFormBtn">Thêm sản phẩm</button>
+
+    <section id="addProductSection" class="hidden">
+      <h2>Thêm sản phẩm mới</h2>
+      <form id="addProductForm">
+        <label for="productName">Tên sản phẩm:</label>
+        <input type="text" id="productName" name="productName" required>
+        
+        <label for="productDesc">Mô tả:</label>
+        <textarea id="productDesc" name="productDesc" rows="3" required></textarea>
+
+        <label for="productPrice">Giá:</label>
+        <input type="text" id="productPrice" name="productPrice" required>
+
+        <label for="productImage">Link hình ảnh (URL):</label>
+        <input type="url" id="productImage" name="productImage">
+
+        <p id="formError"></p>
+
+        <div class="form-buttons">
+          <button type="submit">Lưu sản phẩm</button>
+          <button type="button" id="cancelBtn">Hủy</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cửa hàng Tạp hóa</p>
+    <p>Địa chỉ: 2404 Nguyễn Xuân Sơn, Quận 24, TP.HN</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

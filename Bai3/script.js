@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- Chức năng tìm kiếm ---
+  //  Chức năng tìm kiếm 
   const searchInput = document.getElementById('searchInput');
   const allProducts = document.querySelectorAll('.product-list article');
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Chức năng ẩn/hiện form ---
+  //  Chức năng ẩn/hiện form 
   const toggleBtn = document.getElementById('toggleFormBtn');
   const addProductSection = document.getElementById('addProductSection');
   const addProductForm = document.getElementById('addProductForm');
