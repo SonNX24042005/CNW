@@ -43,37 +43,26 @@ section {
   margin-bottom: 30px;
 }
 
-/* Danh sách sản phẩm */
+/* Phần chứa tiêu đề Sản phẩm nổi bật */
 section:nth-of-type(2) {
-  margin-top: 20px;
+  margin-top: 20px;             
 }
 
-section:nth-of-type(2) h2 {
-  margin-bottom: 15px;
+/* CHỈ flex các thẻ article nằm trong div .product-list */
+section:nth-of-type(2) .product-list {
+  display: flex;                
+  flex-wrap: wrap;              
+  gap: 20px;                    
 }
 
-section:nth-of-type(2) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100%;
-}
-
-section:nth-of-type(2) article {
-  flex: 1 1 30%;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-article {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
-  max-width: 400px;
+section:nth-of-type(2) .product-list article {
+  flex: 1 1 30%;                
+  background: #fff;             
+  border: 1px solid #ccc;       
+  border-radius: 6px;           
+  padding: 15px;                
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  text-align: center;           
 }
 
 article img {
@@ -156,7 +145,7 @@ footer {
     margin-top: 10px;
   }
 
-  section:nth-of-type(2) {
+  section:nth-of-type(2) .product-list {
     flex-direction: column;
   }
 
